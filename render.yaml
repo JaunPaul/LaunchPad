@@ -2,7 +2,7 @@ services:
   - type: web
     name: strapi
     env: node
-    plan: starter
+    plan: hobby
     buildCommand: cd strapi && yarn install && yarn build
     startCommand: cd strapi && rsync -a public/ /data/public/ && yarn start
     healthCheckPath: /_health
